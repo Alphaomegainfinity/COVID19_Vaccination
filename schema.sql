@@ -15,7 +15,7 @@ DROP TABLE IF EXISTS countries;
 CREATE TABLE vaccinations (
     location VARCHAR   NOT NULL,
     iso_code VARCHAR(3)   NOT NULL,
-    date DATE   NOT NULL,
+    date VARCHAR   NOT NULL,
     people_vaccinated INT   NOT NULL,
     people_fully_vaccinated INT   NOT NULL,
     total_boosters INT   NOT NULL
@@ -24,6 +24,7 @@ CREATE TABLE vaccinations (
 CREATE TABLE vaccination_rates (
     location VARCHAR   NOT NULL,
     iso_code VARCHAR(3)   NOT NULL,
+    date VARCHAR(3) NOT NULL,
     people_vaccinated_per_hundred INT   NOT NULL,
     people_fully_vaccinated_per_hundred INT   NOT NULL,
     total_boosters_per_hundred INT   NOT NULL,
@@ -44,7 +45,7 @@ CREATE TABLE region_metadata (
 CREATE TABLE region_date_metadata (
     Country_Region VARCHAR   NOT NULL,
     Province_State VARCHAR   NOT NULL,
-    Date VARCHAR   NOT NULL,
+    date VARCHAR   NOT NULL,
     Recoveries INT   NOT NULL
 );
 
