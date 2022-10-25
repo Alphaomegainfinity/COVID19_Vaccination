@@ -61,7 +61,7 @@ CREATE TABLE countries (
 ALTER TABLE vaccinations ADD CONSTRAINT fk_vaccinations_location_iso_code FOREIGN KEY(location, iso_code)
 REFERENCES countries (location, iso_code);
 
-ALTER TABLE vaccination_rates ADD CONSTRAINT fk_vaccination_rates_location_iso_code FOREIGN KEY(location, iso_code)
+ALTER TABLE vaccinations_per_hundred ADD CONSTRAINT fk_vaccinations_per_hundred_location_iso_code FOREIGN KEY(location, iso_code)
 REFERENCES countries (location, iso_code);
 
 ALTER TABLE region_metadata ADD CONSTRAINT fk_region_metadata_Country_Region FOREIGN KEY(Country_Region)
