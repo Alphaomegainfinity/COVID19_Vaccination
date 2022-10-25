@@ -42,7 +42,7 @@ CREATE TABLE "region_date_metadata" (
 
 CREATE TABLE "countries" (
     "location" VARCHAR   NOT NULL,
-    "iso_code" VARCHER(3)   NOT NULL,
+    "iso_code" VARCHAR(3)   NOT NULL,
     CONSTRAINT "pk_countries" PRIMARY KEY (
         "location","iso_code"
      )
