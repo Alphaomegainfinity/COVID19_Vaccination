@@ -48,17 +48,11 @@ CREATE TABLE "countries" (
      )
 );
 
-ALTER TABLE "vaccinations" ADD CONSTRAINT "fk_vaccinations_location" FOREIGN KEY("location")
-REFERENCES "countries" ("location");
+ALTER TABLE "vaccinations" ADD CONSTRAINT "fk_vaccinations_location_iso_code" FOREIGN KEY("location", "iso_code")
+REFERENCES "countries" ("location", "iso_code");
 
-ALTER TABLE "vaccinations" ADD CONSTRAINT "fk_vaccinations_iso_code" FOREIGN KEY("iso_code")
-REFERENCES "countries" ("location");
-
-ALTER TABLE "vaccination_rates" ADD CONSTRAINT "fk_vaccination_rates_location" FOREIGN KEY("location")
-REFERENCES "countries" ("location");
-
-ALTER TABLE "vaccination_rates" ADD CONSTRAINT "fk_vaccination_rates_iso_code" FOREIGN KEY("iso_code")
-REFERENCES "countries" ("location");
+ALTER TABLE "vaccination_rates" ADD CONSTRAINT "fk_vaccination_rates_location_iso_code" FOREIGN KEY("location", "iso_code")
+REFERENCES "countries" ("location", "iso_code");
 
 ALTER TABLE "region_metadata" ADD CONSTRAINT "fk_region_metadata_Country_Region" FOREIGN KEY("Country_Region")
 REFERENCES "countries" ("location");
