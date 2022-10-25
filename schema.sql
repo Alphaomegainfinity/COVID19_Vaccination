@@ -5,7 +5,7 @@
 -- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
 
 DROP TABLE IF EXISTS vaccinations;
-DROP TABLE IF EXISTS vaccination_rates;
+DROP TABLE IF EXISTS vaccinations_per_hundred;
 DROP TABLE IF EXISTS region_metadata;
 DROP TABLE IF EXISTS region_date_metadata;
 DROP TABLE IF EXISTS countries;
@@ -18,10 +18,11 @@ CREATE TABLE vaccinations (
     date VARCHAR   NOT NULL,
     people_vaccinated BIGINT   NOT NULL,
     people_fully_vaccinated BIGINT   NOT NULL,
-    total_boosters BIGINT   NOT NULL
+    total_boosters BIGINT   NOT NULL,
+    daily_vaccinations_raw BIGINT NOT NULL
 );
 
-CREATE TABLE vaccination_rates (
+CREATE TABLE vaccinations_per_hundred (
     location VARCHAR   NOT NULL,
     iso_code VARCHAR   NOT NULL,
     date VARCHAR NOT NULL,
