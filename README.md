@@ -1,7 +1,7 @@
 A config.py file is REQUIRED - place in the root directory of this project.
 It requires a database username as 'username', a database password as 'password', and a database name as 'database_name'
-                                                   # Group Project Two
-                                                ## Extract, Transform, Load
+#                                                    Group Project Two
+##                                                 Extract, Transform, Load
     
 Team Members 
 
@@ -10,7 +10,7 @@ Team Members
 - Mark Stephen
 
 
-                                                   ## Project Overview 
+##                                                    Project Overview 
 
 #### 1. Proposal 
 
