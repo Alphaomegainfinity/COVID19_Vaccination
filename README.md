@@ -40,11 +40,14 @@ Team Members
 #### 4. Findings.
 
         When building this database we found that our data had a lot of NaN values in multiple columns. To overcome this we 
-        had to change all NaN values to zero values to upload to SQL.
+        had to change all NaN values to zero values to upload to SQL. Unnecessary rows were filtered by requiring a key piece 
+	of information (number of vaccinations) that must be greater than zero, with other rows either missing data or being 
+	unnecessary.
 
         We also found that when building a database that flowed and made sense we had to tailor which tables held what data. 
-        In doing this we found that we had to drop some columns from the orginal CSV files and also groupby certain columns so 
-        that in future any joins made would be accurate.
+        In doing this we found that we had to drop some columns from the orginal CSV files. Additionaly, some data included
+	information about regions, which needed to be aggregated per-country for the purporses of this dataset. Not all countries
+	included sub-regions, and this was required for effective linking to vaccination records in the future.	
         
         In doing this we were able to make a database that holds many points of interesting and relevant data that can be joined 
         in different ways to build in depth analysis on the roll out of Covid 19 vaccinations and the effect this had on the rate 
