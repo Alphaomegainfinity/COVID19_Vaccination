@@ -78,8 +78,7 @@ Team Members
         - Once you have your database and config.py set up correctly you can now run the vaccinations.ipynd notebook, this will build
           your database.
 
-        - We have included some sample use cases in the Sample_Usage.ipynb notebook for you to review how this database works in 
-          principal.
+        
         
 
         
