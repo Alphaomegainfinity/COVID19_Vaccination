@@ -34,7 +34,6 @@ CREATE TABLE vaccinations_per_hundred (
 
 CREATE TABLE region_metadata (
     Country_Region VARCHAR   NOT NULL,
-    Province_State VARCHAR   NOT NULL,
     lat FLOAT   NOT NULL,
     lon FLOAT   NOT NULL,
     continent VARCHAR   NOT NULL,
@@ -45,7 +44,6 @@ CREATE TABLE region_metadata (
 
 CREATE TABLE region_date_metadata (
     Country_Region VARCHAR   NOT NULL,
-    Province_State VARCHAR   NOT NULL,
     date VARCHAR   NOT NULL,
     Recoveries BIGINT   NOT NULL
 );
