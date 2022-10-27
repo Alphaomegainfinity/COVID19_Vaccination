@@ -1,5 +1,7 @@
 A config.py file is REQUIRED - place in the root directory of this project.
 It requires a database username as 'username', a database password as 'password', and a database name as 'database_name'
+
+
 #                                                    Group Project Two
 ##                                                 Extract, Transform, Load
     
@@ -29,12 +31,21 @@ Team Members
         These datasets will give us the ability to check relevant covid-19 data across country and date.
         
 #### 3. Technologies Used:
+        
         Jupyter Notebook
         Pandas
         Postgres SQL
         SQL Alchemy
 
 #### 4. Findings.
+
+        When building this database we found that our data had a lot of NaN values in multiple columns. To overcome this we 
+        had to change all NaN values to zero values to upload to SQL.
+        We also found that when building a database that flowed and made sense we had to tailor which tables held what data. 
+        In doing this we found that we had to drop some columns from the orginal CSV files and also groupby certain columns so 
+        that in future any joins made would be accurate. In doing this we were able to make a database
+        that holds many points of interesting and relevant data that can be joined in different ways to build in depth analysis 
+        on the roll out of Covid 19 vaccinations and the effect this had on the rate of recovery.
 
 
 
