@@ -16,7 +16,7 @@ Team Members
 
 #### 1. Proposal 
 
-        For oour project we wanted to find and aggregate data that will allow us to look at Covid 19 vaccinations
+        For our project we wanted to find and aggregate data that will allow us to look at Covid 19 vaccinations
         and Covid 19 recoveries per country by date. The dataset will also allow us to look at key points during
         this time period to acertain the effectiveness of the vaccinations at aiding suppression and recovery from
         the virus.
@@ -53,6 +53,24 @@ Team Members
         + vaccinations.csv: https://www.kaggle.com/datasets/priteshraj10/covid-vaccination-all-countries-data, accessed date: 24 October 2022
         + Region_metadata.csv https://www.kaggle.com/datasets/rohanrao/covid19-forecasting-metadata, accessed date: 24 October 2022
         + Region_date_metadata.csv: https://www.kaggle.com/datasets/rohanrao/covid19-forecasting-metadata accessed date: 24 October 2022
+
+#### 6. How to operate database.
+
+        To operate this database please do the following.
+
+        - Download git repository including all notebooks, schema and resource files.
+
+        - Create a config.py file with you postgresql username, password and database name as noted in the "vaccinations.ipynd" 
+          notebook.
+
+        - Create a database in progresql using the same name you chose in the config.py, load the schema.sql into your database 
+          using the query tool.
+
+        - Once you have your database and config.py set up correctly you can now run the vaccinations.ipynd notebook, this will build
+          your database.
+          
+        - We have included some sample use cases in the Sample_Usage.ipynb notebook for you to review how this database works in 
+          principal.
         
 
         
