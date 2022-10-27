@@ -41,11 +41,17 @@ Team Members
 
         When building this database we found that our data had a lot of NaN values in multiple columns. To overcome this we 
         had to change all NaN values to zero values to upload to SQL.
+
         We also found that when building a database that flowed and made sense we had to tailor which tables held what data. 
         In doing this we found that we had to drop some columns from the orginal CSV files and also groupby certain columns so 
-        that in future any joins made would be accurate. In doing this we were able to make a database
-        that holds many points of interesting and relevant data that can be joined in different ways to build in depth analysis 
-        on the roll out of Covid 19 vaccinations and the effect this had on the rate of recovery.
+        that in future any joins made would be accurate.
+        
+        In doing this we were able to make a database that holds many points of interesting and relevant data that can be joined 
+        in different ways to build in depth analysis on the roll out of Covid 19 vaccinations and the effect this had on the rate 
+        of recovery.
+
+        Please note we have built the database in this way to retain as much data as possible, we found that the CSV data in some
+        instances had missmatching date ranges so chose not to join CSV data before uploading to SQL.
 
 
 
@@ -68,7 +74,7 @@ Team Members
 
         - Once you have your database and config.py set up correctly you can now run the vaccinations.ipynd notebook, this will build
           your database.
-          
+
         - We have included some sample use cases in the Sample_Usage.ipynb notebook for you to review how this database works in 
           principal.
         
